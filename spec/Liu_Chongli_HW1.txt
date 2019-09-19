@@ -1,0 +1,26 @@
+.........F..........F.............
+
+Failures:
+
+  1) Ruby intro part 1 #sum_to_n returns true when any two elements sum to the second argument [30 points]
+     Failure/Error: expect(sum_to_n?([-1, -2, 3, 4, 5, -8], 12)).to be false # 3 + 4 + 5 = 12 (not 3 elements)
+
+       expected false
+            got true
+     # ./part1_spec.rb:51:in `block (3 levels) in <top (required)>'
+
+  2) #binary_multiple_of_4? classifies valid binary numbers [30 points]
+     Failure/Error: expect(binary_multiple_of_4?(string)).to be_truthy,  "Incorrect results for input: \"#{string}\""
+       Incorrect results for input: "1010101010100"
+     # ./part2_spec.rb:48:in `block (3 levels) in <top (required)>'
+     # ./part2_spec.rb:47:in `each'
+     # ./part2_spec.rb:47:in `block (2 levels) in <top (required)>'
+
+Finished in 0.02166 seconds (files took 0.09296 seconds to load)
+34 examples, 2 failures
+
+Failed examples:
+
+rspec ./part1_spec.rb:47 # Ruby intro part 1 #sum_to_n returns true when any two elements sum to the second argument [30 points]
+rspec ./part2_spec.rb:46 # #binary_multiple_of_4? classifies valid binary numbers [30 points]
+
